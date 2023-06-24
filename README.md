@@ -1,10 +1,10 @@
 # PRACTICA#10 BASE DE DATOS
-Este repositorio muestra como podemos programar una ESP32 con un RELAY y encender el LED por medio de un botón (Switch)ocupando la plataforma node-red 
+Este repositorio muestra como podemos programar una ESP32 con sensor ULTRASONICO y sensor DHT22 y ocupando la plataforma node-red y el programa XAMPP y ahi poder observar la temperatura, húmedad y distancia mandada desde WOKWI, Y al mismo tiempo graficar los resultados obtenidos.
 
 
 ### Descripción
 
-La ```Esp32``` la utilizamos en un entorno de adquision de datos, lo cual en esta practica ocuparemos un  (```RELAY```) para encender un LED por medio de un botón. Cabe aclarar que esta practica se usara en el simulador llamado [WOKWI](https://https://wokwi.com/). y ```localhost:1880```
+La ```Esp32``` la utilizamos en un entorno de adquision de datos, lo cual en esta practica ocuparemos un sensor (```HC-SR04```) para medir la distancia y un sensor ```DHT22``` para medir de temperatura y humedad. Cabe aclarar que esta practica se usara en el simulador llamado [WOKWI](https://https://wokwi.com/),  [localhost:1880] y  [phpMyAdmin] (http://localhost/phpmyadmin/index.php?route=/sql&db=dai%26m&table=COLLADO&pos=0)
 
 
 ## Material Necesario
@@ -13,8 +13,10 @@ Para realizar esta practica necesitas lo siguiente
 
 - [WOKWI](https://https://wokwi.com/)
 - Tarjeta ESP 32
-- Relay (modulo)
+- HC-SR04
+- DHT22
 - NODE-red (http://localhost:1880/#flow/214928d358894902)
+- [phpMyAdmin](http://localhost/phpmyadmin/index.php?route=/sql&db=dai%26m&table=COLLADO&pos=0)
 
 
 ## Instrucciones
@@ -63,6 +65,7 @@ Para abrir la aplicación nos vamos algun explorador y colocamos el siguente lin
 2. Seleccionamos **Install* y buscamos ```node-red-dashboard```.
 3. Seleccionamos ```node-red-dashboard```.
 ![](https://github.com/DiegoJm10/Node-red-instalcacion/blob/main/Node.js%20-%20Google%20Chrome%2014_06_2023%2005_06_17%20p.%20m..png?raw=true)
+
 
 # Instalación de phpMyAdmin
 1. Entrar a la pagina https://www.apachefriends.org/ .
