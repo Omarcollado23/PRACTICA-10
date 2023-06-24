@@ -4,8 +4,7 @@ Este repositorio muestra como podemos programar una ESP32 con sensor ULTRASONICO
 
 ### Descripción
 
-La ```Esp32``` la utilizamos en un entorno de adquision de datos, lo cual en esta practica ocuparemos un sensor (```HC-SR04```) para medir la distancia y un sensor ```DHT22``` para medir de temperatura y humedad. Cabe aclarar que esta practica se usara en el simulador llamado [WOKWI](https://https://wokwi.com/),  [localhost:1880] y  [phpMyAdmin] (http://localhost/phpmyadmin/index.php?route=/sql&db=dai%26m&table=COLLADO&pos=0)
-
+La ```Esp32``` la utilizamos en un entorno de adquision de datos, lo cual en esta practica ocuparemos un sensor (```HC-SR04```) para medir la distancia y un sensor ```DHT22``` para medir de temperatura y humedad. Cabe aclarar que esta practica se usara en el simulador llamado [WOKWI](https://https://wokwi.com/),  [localhost:1880] y  [phpMyAdmin]
 
 ## Material Necesario
 
@@ -68,12 +67,12 @@ Para abrir la aplicación nos vamos algun explorador y colocamos el siguente lin
 
 
 # Instalación de phpMyAdmin
-1. Entrar a la pagina https://www.apachefriends.org/ .
+1. Entrar a la pagina https://www.apachefriends.org/. 
 Descargar XAMPP for Windows (8.2.4).
 
 ![](https://github.com/Omarcollado23/PRACTICA-10-BASE-DE-DATOS/blob/main/xampp.png?raw=true)
 
-2. Se les decargara un archivo llamado xampp-windows-x64-8.2.4-0VS16-installer
+2. Se decargara un archivo llamado xampp-windows-x64-8.2.4-0VS16-installer
 Ejecutamos el archivo com Administrador
 
 ![](https://github.com/Omarcollado23/PRACTICA-10-BASE-DE-DATOS/blob/main/xampp2.png?raw=true)
@@ -84,8 +83,12 @@ Le damos doble click al boton Admin.
 
 ![](https://github.com/Omarcollado23/PRACTICA-10-BASE-DE-DATOS/blob/main/phpMyAdmin.png?raw=true)
 
-4. Crear tabla
-Se va a crear una tabla con los siguentes cirterios:
+4. Se va a crear una tabla dando clic en el lado superio izquierdo donde dice nueva.
+Nombramos nuestra tabla como nosotros querramos y el siguiente dato lo buscamos ahi mismo con el nombre de [utf8mb4_general_ci] y damos crear, como se muestra en la siguiente imagen.
+
+![]()
+
+5. una vez creada la tabla la llenamos con los siguientes criterios. 
 
 ![](https://github.com/Omarcollado23/PRACTICA-10-BASE-DE-DATOS/blob/main/tabla%20xampp.png?raw=true)
 
