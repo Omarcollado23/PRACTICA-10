@@ -369,9 +369,9 @@ Despues damos Clic en el boton donde dice ```Deploy``` para cargar el programa y
 
 Y veremos los resultados que manda el sensor al servidor como se muestra en la imagen.
 
-![]()
+![](https://github.com/Omarcollado23/PRACTICA-10-BASE-DE-DATOS/blob/main/RESGRAF1.1.png?raw=true)
 
-![]()
+![](https://github.com/Omarcollado23/PRACTICA-10-BASE-DE-DATOS/blob/main/RESGRAF2.png?raw=true)
 
 Resultados o datos mandados a la base datos 
 
