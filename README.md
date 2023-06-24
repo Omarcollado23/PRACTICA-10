@@ -71,23 +71,23 @@ Para abrir la aplicación nos vamos algun explorador y colocamos el siguente lin
 1. Entrar a la pagina https://www.apachefriends.org/ .
 Descargar XAMPP for Windows (8.2.4).
 
-![]()
+![](https://github.com/Omarcollado23/PRACTICA-10-BASE-DE-DATOS/blob/main/xampp.png?raw=true)
 
 2. Se les decargara un archivo llamado xampp-windows-x64-8.2.4-0VS16-installer
 Ejecutamos el archivo com Administrador
 
-![]()
+![](https://github.com/Omarcollado23/PRACTICA-10-BASE-DE-DATOS/blob/main/xampp2.png?raw=true)
 
 3. Debemos abrir el programa llamado XAMPP.
 Dentro de la interfaz nos vamos a la fila llamada Mysql.
 Le damos doble click al boton Admin.
 
-![]()
+![](https://github.com/Omarcollado23/PRACTICA-10-BASE-DE-DATOS/blob/main/phpMyAdmin.png?raw=true)
 
 4. Crear tabla
 Se va a crear una tabla con los siguentes cirterios:
 
-![]()
+![](https://github.com/Omarcollado23/PRACTICA-10-BASE-DE-DATOS/blob/main/tabla%20xampp.png?raw=true)
 
 
 ### Instrucciones de preparación de entorno 
@@ -272,6 +272,7 @@ TempAndHumidity  data = dhtSensor.getTempAndHumidity();
 1. Iniciamos el simulador.
 2. Visualizar los datos en el monitor serial.
 3. Colocar la distancia dando *doble click* al sensor **HC-SR04** 
+4. Colocamos la temperatura y húmedad *doble click* al sensor **DHT22**
 
 ### Despues de que el programa corrio bien sin errores, ahora nos vamos a las parte de conexion con NODE-RED
 
@@ -294,13 +295,15 @@ return msg;
 
 ```
 
-![]()
+![](https://github.com/Omarcollado23/PRACTICA-10-BASE-DE-DATOS/blob/main/conf%20function.png?raw=true)
 
 2. Configurar el bloque  ```Mysql``` y configuramos como se muestra en la imagen:
 
-![]()
+![](https://github.com/Omarcollado23/PRACTICA-10-BASE-DE-DATOS/blob/main/mysql.png?raw=true)
 
-![]()
+3. Colocamo el nombre de la base de datos que creamos en XAMPP.
+
+![](https://github.com/Omarcollado23/PRACTICA-10-BASE-DE-DATOS/blob/main/mysql1.png?raw=true)
 
 4.  Colocamos bloque ```mqqtt in```.
 
@@ -358,7 +361,7 @@ Cuando haya funcionado, la información obtenida del sensor **DHT22** Y **HC-SR0
 
 Al final el diagrama nos queda de la siguiente manera:
 
-![](https://github.com/Omarcollado23/PRACTICA-8-DHT22-CON-ULTRASONICO/blob/main/esquema.png?raw=true)
+![](https://github.com/Omarcollado23/PRACTICA-10-BASE-DE-DATOS/blob/main/esquema.png?raw=true)
 
 Despues damos Clic en el boton donde dice ```Deploy``` para cargar el programa y despues oprimos la pestaña con una flechita señalnado hacia arriba en diagonal, como se muestra en la imagen. 
 
@@ -366,13 +369,13 @@ Despues damos Clic en el boton donde dice ```Deploy``` para cargar el programa y
 
 Y veremos los resultados que manda el sensor al servidor como se muestra en la imagen.
 
-![](https://github.com/Omarcollado23/PRACTICA-8-DHT22-CON-ULTRASONICO/blob/main/result%201.png?raw=true)
+![]()
 
 ![]()
 
 Resultados o datos mandados a la base datos 
 
-![]()
+![](https://github.com/Omarcollado23/PRACTICA-10-BASE-DE-DATOS/blob/main/base%20de%20datos%20result.png?raw=true)
 
 # Créditos
 
