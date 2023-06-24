@@ -50,23 +50,8 @@ node-red
  ![](https://github.com/Omarcollado23/PRACTICA-7-CON-ULTRASONICO/blob/main/node-red.png?raw=true)
 
 
- ## Arranque de programa
 
-Para abrir la aplicación nos vamos algun explorador y colocamos el siguente link:    ```localhost:1880```
-
-
-## Instalación de Dashboard
-
-1. Abrimos la pestaña de opciones y elegimos ```Manage palette``` 
-
-![](https://github.com/DiegoJm10/Node-red-instalcacion/blob/main/Node.js%20-%20Google%20Chrome%2014_06_2023%2005_06_26%20p.%20m..png?raw=true)
-
-2. Seleccionamos **Install* y buscamos ```node-red-dashboard```.
-3. Seleccionamos ```node-red-dashboard```.
-![](https://github.com/DiegoJm10/Node-red-instalcacion/blob/main/Node.js%20-%20Google%20Chrome%2014_06_2023%2005_06_17%20p.%20m..png?raw=true)
-
-
-# Instalación de phpMyAdmin
+# Instalación de phpMyAdmin y Preparacion de entorno
 1. Entrar a la pagina https://www.apachefriends.org/. 
 Descargar XAMPP for Windows (8.2.4).
 
@@ -86,16 +71,16 @@ Le damos doble click al boton Admin.
 4. Se va a crear una tabla dando clic en el lado superio izquierdo donde dice nueva.
 Nombramos nuestra tabla como nosotros querramos y el siguiente dato lo buscamos ahi mismo con el nombre de [utf8mb4_general_ci] y damos crear, como se muestra en la siguiente imagen.
 
-![]()
+![](https://github.com/Omarcollado23/PRACTICA-10-BASE-DE-DATOS/blob/main/crear%20tabla.png?raw=true)
 
-5. una vez creada la tabla la llenamos con los siguientes criterios. 
+5. Una vez creada la tabla la llenamos con los siguientes criterios. 
 
 ![](https://github.com/Omarcollado23/PRACTICA-10-BASE-DE-DATOS/blob/main/tabla%20xampp.png?raw=true)
 
 
-### Instrucciones de preparación de entorno 
+### Instrucciones de preparación de entorno de WOKWI
 
-1. Abrir la terminal de programación y colocar la siguente programación:
+1. Abrir la terminal del ESP32 de programación y colocar la siguente programación:
 
 ```
 #include <ArduinoJson.h>
@@ -266,7 +251,7 @@ TempAndHumidity  data = dhtSensor.getTempAndHumidity();
 
 ![](https://github.com/Omarcollado23/PRACTICA-7-CON-ULTRASONICO/blob/main/libreria.png?raw=true)
 
-3. Hacemos las conexiones el **ESP32** del sensor **HC-SR04**  y el **DHT22** como se muestra en la siguiente imagen
+3. Colocamos los objetos que ocuparemos antes ya mencionados y hacemos las conexiones el **ESP32** del sensor **HC-SR04**  y el **DHT22** como se muestra en la siguiente imagen
 
 ![](https://github.com/Omarcollado23/PRACTICA-8-DHT22-CON-ULTRASONICO/blob/main/CONEXIONES.png?raw=true)
 
@@ -281,11 +266,26 @@ TempAndHumidity  data = dhtSensor.getTempAndHumidity();
 
 # Instrucciones para hacer la conexión con NODE-RED
 
-Abrimos una nueva pestaña en el navegador que utilizas e insertamos en la barra de navegación el suiguiente link (localhost:1880)
+ ## Arranque de programa
+
+Para abrir la aplicación nos vamos algun explorador y colocamos el siguente link:    ```localhost:1880```
+
+
+## Instalación de Dashboard
+
+1. Abrimos la pestaña de opciones y elegimos ```Manage palette``` 
+
+![](https://github.com/DiegoJm10/Node-red-instalcacion/blob/main/Node.js%20-%20Google%20Chrome%2014_06_2023%2005_06_26%20p.%20m..png?raw=true)
+
+2. Seleccionamos **Install* y buscamos la libreria ```node-red-dashboard```.
+3. Seleccionamos ```node-red-dashboard```.
+![](https://github.com/DiegoJm10/Node-red-instalcacion/blob/main/Node.js%20-%20Google%20Chrome%2014_06_2023%2005_06_17%20p.%20m..png?raw=true)
+
+Una ves instalda la librería nos queda de la siguiente manera.
 
 ![](https://github.com/Omarcollado23/PRACTICA-7-CON-ULTRASONICO/blob/main/localhost1.png?raw=true)
 
-1. Colocamos bloque ```function``` para obtener los datos con el siguente codigo.
+4. Colocamos un bloque ```function``` para obtener los datos con el siguente codigo.
 
 ```
 var query = "INSERT INTO `COLLADO` (`ID`, `FECHA`, `DEVICE`, `TEMPERATURA`, `HUMEDAD`, `DISTANCIA`) VALUES (NULL, current_timestamp(), '";
@@ -300,23 +300,23 @@ return msg;
 
 ![](https://github.com/Omarcollado23/PRACTICA-10-BASE-DE-DATOS/blob/main/conf%20function.png?raw=true)
 
-2. Configurar el bloque  ```Mysql``` y configuramos como se muestra en la imagen:
+5. colocamos un bloque  ```Mysql``` y lo configuramos como se muestra en la imagen:
 
 ![](https://github.com/Omarcollado23/PRACTICA-10-BASE-DE-DATOS/blob/main/mysql.png?raw=true)
 
-3. Colocamo el nombre de la base de datos que creamos en XAMPP.
+6. Colocamo el nombre de la base de datos que creamos en XAMPP.
 
 ![](https://github.com/Omarcollado23/PRACTICA-10-BASE-DE-DATOS/blob/main/mysql1.png?raw=true)
 
-4.  Colocamos bloque ```mqqtt in```.
+7.  Colocamos bloque ```mqqtt in```.
 
 ![](https://github.com/DiegoJm10/dht22-con-node-red/blob/main/bloquemqtt.png?raw=true)
 
-5.  Configurar el bloque con el puerto mqtt con el ip ```44.195.202.69``` como se muestra en la imagen.
+8.  Configurar el bloque con el puerto mqtt con el ip ```44.195.202.69``` como se muestra en la imagen.
 
 ![](https://github.com/Omarcollado23/PRACTICA-7-CON-ULTRASONICO/blob/main/%23servidor.png?raw=true)
 
-6.  Colocar el bloque json y configurarlo como se muestra en la imagen.
+9.  Colocar el bloque json y configurarlo como se muestra en la imagen.
 
 ![](https://github.com/DiegoJm10/dht22-con-node-red/blob/main/JSON.png?raw=true)
 
@@ -346,7 +346,7 @@ return msg;
 ```
 ![](https://github.com/Omarcollado23/PRACTICA-7-CON-ULTRASONICO/blob/main/code%20distancia.png?raw=true)
 
-5. Colocamos los bloques de chart y gauge.
+10. Colocamos los bloques de chart y gauge.
 Los configuramos de la siguiente manera como se muestra en las siguientes imagenes.
 
 ![](https://github.com/Omarcollado23/PRACTICA-8-DHT22-CON-ULTRASONICO/blob/main/conf%20temp.png?raw=true)
