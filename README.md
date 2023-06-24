@@ -287,7 +287,7 @@ Una ves instalda la librería nos queda de la siguiente manera.
 
 4. Colocamos un bloque ```function``` para obtener los datos con el siguente codigo.
 
-![]()
+![](https://github.com/Omarcollado23/PRACTICA-10-BASE-DE-DATOS/blob/main/FUNCTION.png?raw=true)
 
 ```
 var query = "INSERT INTO `COLLADO` (`ID`, `FECHA`, `DEVICE`, `TEMPERATURA`, `HUMEDAD`, `DISTANCIA`) VALUES (NULL, current_timestamp(), '";
@@ -303,6 +303,8 @@ return msg;
 ![](https://github.com/Omarcollado23/PRACTICA-10-BASE-DE-DATOS/blob/main/conf%20function.png?raw=true)
 
 5. colocamos un bloque  ```Mysql``` y lo configuramos como se muestra en la imagen:
+
+![](https://github.com/Omarcollado23/PRACTICA-10-BASE-DE-DATOS/blob/main/mysql1.1.png?raw=true)
 
 ![](https://github.com/Omarcollado23/PRACTICA-10-BASE-DE-DATOS/blob/main/mysql.png?raw=true)
 
@@ -378,7 +380,7 @@ Y veremos los resultados que manda el sensor al servidor como se muestra en la i
 
 ![](https://github.com/Omarcollado23/PRACTICA-10-BASE-DE-DATOS/blob/main/RESGRAF2.png?raw=true)
 
-Resultados o datos mandados a la base datos 
+Datos mandados a la base datos mediante el dashboard
 
 ![](https://github.com/Omarcollado23/PRACTICA-10-BASE-DE-DATOS/blob/main/base%20de%20datos%20result.png?raw=true)
 
