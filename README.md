@@ -287,6 +287,8 @@ Una ves instalda la librería nos queda de la siguiente manera.
 
 4. Colocamos un bloque ```function``` para obtener los datos con el siguente codigo.
 
+![]()
+
 ```
 var query = "INSERT INTO `COLLADO` (`ID`, `FECHA`, `DEVICE`, `TEMPERATURA`, `HUMEDAD`, `DISTANCIA`) VALUES (NULL, current_timestamp(), '";
 query = query + msg.payload.DEVICE + "','";
